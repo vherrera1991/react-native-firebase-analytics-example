@@ -16,6 +16,7 @@ import {
   Text,
   useColorScheme,
   View,
+  Button,
 } from 'react-native';
 
 import {
@@ -25,6 +26,8 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+
+import analytics from '@react-native-firebase/analytics';
 
 /* $FlowFixMe[missing-local-annot] The type annotation(s) required by Flow's
  * LTI update could not be added via codemod */
@@ -75,7 +78,14 @@ const App: () => Node = () => {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
-          <Section title="Step One">
+          <Button
+            title="Test event"
+            onPress={async () =>
+              await analytics().logEvent('press_btn', {id: 'test-button'})
+            }
+          />
+
+          {/* <Section title="Step One">
             Edit <Text style={styles.highlight}>App.js</Text> to change this
             screen and then come back to see your edits.
           </Section>
@@ -88,7 +98,7 @@ const App: () => Node = () => {
           <Section title="Learn More">
             Read the docs to discover what to do next:
           </Section>
-          <LearnMoreLinks />
+          <LearnMoreLinks /> */}
         </View>
       </ScrollView>
     </SafeAreaView>

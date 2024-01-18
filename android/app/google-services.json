@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "599826730800",
+    "project_id": "rn-firebase-analytics-example",
+    "storage_bucket": "rn-firebase-analytics-example.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:599826730800:android:6834b03549c80506b1c2f5",
+        "android_client_info": {
+          "package_name": "com.firebaseanalyticsexample"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeq-bMadaQ3h5PrpssVqdXibiU5hQ2CrE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
